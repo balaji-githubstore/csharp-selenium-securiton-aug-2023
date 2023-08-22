@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Working on table
 namespace SeleniumConcepts
 {
     public class Demo14Table
@@ -22,7 +22,6 @@ namespace SeleniumConcepts
 
             for (int p = 1; p <= 6; p++)
             {
-
                 int rowCount = driver.FindElements(By.XPath("//table[@id='example']/tbody/tr")).Count;
                 Console.WriteLine(rowCount);
 
