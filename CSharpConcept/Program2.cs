@@ -9,7 +9,7 @@ namespace CSharpConcept
     public class Program2
     {
 
-        public static void Main(string[] args) 
+        public static void Main1(string[] args) 
         {
 
             Employee.companyName = "Google";
@@ -23,17 +23,18 @@ namespace CSharpConcept
             Employee emp4= Employee.GetEmployeeInstance();
 
 
-            emp1.empId = 101;
+            emp1.EmpId = -101;
             emp1.empName = "Saul";
             emp1.empSalary = 9000;
             emp1.empPerformance = 'A';
           
 
-            emp2.empId = 102;
+            emp2.EmpId = 1002;
             emp2.empName = "Kim";
             emp2.empSalary = 8000;
             emp2.empPerformance = 'C';
 
+            Console.WriteLine(emp1.EmpId);
 
             emp1.PrintEmployeeDetails();
             emp2.PrintEmployeeDetails();

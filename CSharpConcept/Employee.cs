@@ -9,12 +9,30 @@ namespace CSharpConcept
     //new comment
     public class Employee
     {
-        public int empId;
+        private int empId;
         public String empName;
         public double empSalary;
         public char empPerformance;
         public static String companyName;
 
+        public int EmpId
+        {
+            get { 
+                return empId; 
+            }
+            set { 
+                if(value>=1000)
+                {
+                    empId= value;
+                }
+                else
+                {
+                    Console.WriteLine("loaded with default value. Invalid data detected");
+                }
+            }
+        }
+
+       
 
         public void PrintEmployeeDetails()
         {

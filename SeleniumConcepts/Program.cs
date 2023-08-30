@@ -13,12 +13,13 @@ namespace Securiton.SeleniumConcepts
     {
         public static void Main8(string[] args)
         {
-
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("start-maximized");
             options.AddArgument("--disable-notifications");
 
             IWebDriver driver = new ChromeDriver(options);
+
+            //driver.Manage().Cookies
             
           //  driver = new EdgeDriver();
 

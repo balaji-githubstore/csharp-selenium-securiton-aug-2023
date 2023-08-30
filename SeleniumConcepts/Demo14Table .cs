@@ -12,7 +12,7 @@ namespace SeleniumConcepts
     public class Demo14Table
     {
         //new comment1
-        public static void Main(string[] args)
+        public static void Main8(string[] args)
         {
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
